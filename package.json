@@ -1,0 +1,50 @@
+{
+  "name": "vocabularytrainer",
+  "version": "1.0.0",
+  "description": "A VocabularyTrainer for my sons",
+  "main": "main.js",
+  "repository": {
+    "url": "https://github.com/uid01089/vocabularytrainer"
+  },
+  "scripts": {
+    "start_webpack": "webpack-dev-server --mode development",
+    "build_webpack": "webpack --mode development",
+    "start_node": "node main.js",
+    "build_backend": "webpack --mode development --debug --output-pathinfo --config webpack.config.backend.js",
+    "deploy_backend": "sh ./deploy_backend.sh",
+    "deploy_frontend": "sh ./deploy_frontend.sh"
+  },
+  "author": "Konrad Schmid",
+  "license": "Apache-2.0 License",
+  "dependencies": {
+    "js_lib": "file:src_ts/js_lib",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.11.0",
+    "@open-wc/building-webpack": "^2.13.40",
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.7",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.1",
+    "eslint": "^7.7.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "ssh2": "^0.8.9",
+    "style-loader": "^1.2.1",
+    "text-loader": "0.0.1",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "typescript-tslint-plugin": "^0.5.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
